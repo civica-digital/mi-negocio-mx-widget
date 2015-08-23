@@ -1,9 +1,11 @@
-<?php include_once("widget-dinamico.html"); ?>
+<?php 
+
+include_once("widget-dinamico.html"); 
 echo "
 <script type=\"text/javascript\">
 $(document).ready(function cambioTexto(){
 	var cnt=0, texts=[];
-	$(".textContent").each(function() {
+	$(\".textContent\").each(function() {
 		texts[cnt++]=$(this).text();
 	});
 	function slide() {
@@ -20,3 +22,5 @@ $(document).ready(function cambioTexto(){
 });
 </script>
 ";
+
+?>
